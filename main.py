@@ -26,6 +26,8 @@ async def on_message(message):
         await message.channel.send("no digas eso")
     elif message.content.startswith('-hola'):  
         await message.channel.send("hola como estas me llamo juanito")
+        await message.channel.send('puedes pedirme que te cree una contraseña diciendome: -contraseña')
+        await message.channel.send('puedes pedirme que tire la moneda al aire para que veas tu suerte diciendome: -tira la moneda')
     elif message.content.startswith('-como te llamas'):  
         await message.channel.send("juanito")
     elif message.content.startswith('-bien y tu') or message.content.startswith('-mal y tu'):  
@@ -36,7 +38,7 @@ async def on_message(message):
     elif message.content.startswith('-contraseña'):
         await message.channel.send(gen_pass('password'))
     #girar la moneda
-    elif message.content.startswith('-gira la moneda'):
+    elif message.content.startswith('-tira la moneda'):
         await message.channel.send(g_l_m())
 
  
