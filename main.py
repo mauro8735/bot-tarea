@@ -21,13 +21,9 @@ async def on_message(message):
     #mensajes
     if message.content.startswith('-chao'):
         await message.channel.send("chao que estes bien")
-    elif message.content.startswith('-me cago') or message.content.startswith('-me cago en todo'):  
+    elif message.content.startswith('-') or message.content.startswith('-'):  
         await message.delete() 
         await message.channel.send("no digas eso")
-    elif message.content.startswith('-el chicle'):  
-        await message.channel.send("un niño molestoso")
-    elif message.content.startswith('-el papas'):  
-        await message.channel.send("un niño ipercargado")
     elif message.content.startswith('-hola'):  
         await message.channel.send("hola como estas me llamo juanito")
     elif message.content.startswith('-como te llamas'):  
